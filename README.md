@@ -15,6 +15,6 @@ This system is a simple system with ablility to:
  4. Update Existing Employee
  5. Delete Employe
 
-The system is developed using [React.Js](https://reactjs.org/) Framework
+The system is developed using <a href="https://reactjs.org/" target="_blank">React.Js</a> Framework
 
-[Linose-Studio](http://linose-studio.herokuapp.com/)
+<a href="http://linose-studio.herokuapp.com/" target="_blank">Linose-Studio</a>
