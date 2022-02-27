@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_ENDPOINT = "http://127.0.0.1:8000/api/";
+const API_ENDPOINT = "https://emp-man-backend.herokuapp.com/api/";
 
 export function requestGetEmployees(){
     return axios.request({
