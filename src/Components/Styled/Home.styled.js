@@ -175,7 +175,7 @@ export const StyledCardBox = ({Title, toolLink, toolLinkTitle, Body=null, Footer
                     <CardFooterButtonLeft color={FooterLeft.color} to={FooterLeft.to}> {FooterLeft.text}</CardFooterButtonLeft>
                 ) : "" }
                 { (FooterRight !== null) ? (
-                    <CardFooterButtonRight color={FooterRight.color} > {FooterRight.text}</CardFooterButtonRight>
+                    <CardFooterButtonRight color={FooterRight.color}  onClick={(e)=>{FooterRight.onclick()}} > {FooterRight.text}</CardFooterButtonRight>
                 ) : "" }
             </CardFooter>
         </Card>

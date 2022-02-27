@@ -306,6 +306,16 @@ export const DicDesc = styled.dd`
     max-width: 75%;
 `;
 
+export const ErrorSpan = styled.span`
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    color: #dc3545!important;
+`;
+
 export const StyledNavBar = ({Image, Title}) => {
     return (
         <Nav>

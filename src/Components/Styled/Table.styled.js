@@ -104,7 +104,7 @@ const datas  = (bodyColumns) =>{
     return data;
 }
 
-export const StyledTable = ({headColumns, bodyRows}) => {
+export const StyledTable = ({headColumns, bodyRows=null}) => {
     const heads = headColumns.map((headColumn) => {
 
         return <TableHeadColumn key={Math.random()*100}>{headColumn}</TableHeadColumn>;
@@ -125,7 +125,7 @@ export const StyledTable = ({headColumns, bodyRows}) => {
                 </TableHeadRow>
             </TableHead>
             <TableBody>
-                {datasView}
+                {(bodyRows===null) ? "" : datasView}
             </TableBody>
         </Table>
     );

@@ -4,9 +4,11 @@ import Home from './Components/Front/Home';
 import AddEmployee from './Components/Front/Add';
 import ViewEmployee from './Components/Front/View';
 import EditEmployee from './Components/Front/Edit';
+import DeleteEmployee from './Components/Front/Delete';
 import { StyledNavBar,AppWrapper,ContentWrapper,Content,ContentContainer,StyledContentHeader } from './Components/Styled/Stracture.styled';
 import { createGlobalStyle } from 'styled-components';
-import { StyledFooter } from './Components/Styled/Footers.styled'
+import { StyledFooter } from './Components/Styled/Footers.styled';
+import Logo from './logo.jpg';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -29,7 +31,7 @@ function App() {
     <>
       <GlobalStyle/>
       <AppWrapper>
-        <StyledNavBar Image={process.env.PUBLIC_URL + 'AdminLTELogo.png'} Title={"EMS"} />
+        <StyledNavBar Image={Logo} Title={"EMS"} />
         <ContentWrapper>
           <StyledContentHeader Title={"Employee Management System"}/>
           <Content>
@@ -39,6 +41,7 @@ function App() {
                 <Route path='/addEmployee' element={<AddEmployee />} />
                 <Route path='/view/:id' element={<ViewEmployee />} />
                 <Route path='/edit/:id' element={<EditEmployee />} />
+                <Route path='/delete/:id' element={<DeleteEmployee />} />
               </Routes>
             </ContentContainer>
           </Content>          
