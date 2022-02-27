@@ -37,7 +37,7 @@ export const FooterRight = styled.div`
     float: right!important;
 `;
 
-export const FooterStrongLink = styled(Link)`
+export const FooterStrongLink = styled.a`
     font-size: 1rem;
     line-height: 1.5;
     text-align: left;
@@ -54,7 +54,7 @@ export const StyledFooter = ({linkName, linkTo, version}) => {
             <FooterRight>Version {version}</FooterRight>
             <FooterStrong>
             Copyright © 2022
-                <FooterStrongLink to={linkTo} target={"_blank"}> {linkName} </FooterStrongLink>
+                <FooterStrongLink href={linkTo} target={"_blank"}> {linkName} </FooterStrongLink>
                 . All rights reserved.
             </FooterStrong>
         </Footers>
