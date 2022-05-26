@@ -1,3 +1,5 @@
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://reactjs.org/logo-og.png" width="400"></a></p>
+
 # Simple Employee Management System 
 
 ### `Installation`
